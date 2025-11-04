@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Games for Learning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+  }
+</script>
+
+<body>
+  <header>
+    <h1>Games for Learning</h1>
+    <p>Contact the IT Department for Support and Enquiries</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="it-structure.html">IT Structure</a>
+    <a href="security-policy.html">Security Policy</a>
+    <a href="use-policy.html">Use Policy</a>
+    <a href="helpdesk.html">Help Desk</a>
+    <a href="sop-recovery.html">SOP & Recovery</a>
+    <a href="gaming.html">Gaming</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="#" onclick="logout()">Logout</a>
+
+<script>
+  function logout() {
+    localStorage.removeItem("loggedIn");
+    window.location.href = "login.html";
+  }
+</script>
+  </nav>
+
+  <main>
+    <h2>Contact Us</h2>
+    <p>
+      If you need IT support, have questions, or want to report a system issue, 
+      please contact us using the details below or submit a support ticket.
+    </p>
+
+    <section>
+      <h3>📞 Contact Information</h3>
+      <p><strong>Email:</strong> <a href="mailto:ITdesigninfrustructure@gmail.com">ITdesigninfrustructure@gmail.com</a></p>
+      <p><strong>Phone:</strong> 011 533 7456</p>
+      <p><strong>Office Hours:</strong> Monday to Friday, 08:00 – 16:00</p>
+    </section>
+
+    <section>
+      <h3>🎫 Submit a Support Ticket</h3>
+      <p>
+        Use the form below to log your IT issues, software requests, or technical inquiries.  
+        Our support team will review your submission and respond as soon as possible.
+      </p>
+
+ <form action="https://formsubmit.co/ITdesigninfrustructure@gmail.com" method="POST">
+  <!-- Disable CAPTCHA -->
+  <input type="hidden" name="_captcha" value="false">
+  
+  <!-- Table-style email layout -->
+  <input type="hidden" name="_template" value="table">
+  
+  <!-- Email subject line -->
+  <input type="hidden" name="_subject" value="New IT Support Ticket - Games for Learning">
+  
+  <!-- Redirect to thank-you page after submission -->
+  <input type="hidden" name="_next" value="thankyou.html">
+  
+  <!-- Automatic email confirmation to the sender -->
+  <input type="hidden" name="_next" value="thankyou.html">
+
+  
+  <!-- Ticket Fields -->
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+  <label for="department">Department / Class:</label>
+  <input type="text" id="department" name="department" placeholder="Enter your department or class">
+
+  <label for="issue-type">Issue Type:</label>
+  <select id="issue-type" name="issue-type" required>
+    <option value="">Select issue type</option>
+    <option value="network">Network Problem</option>
+    <option value="hardware">Hardware Issue</option>
+    <option value="software">Software Installation</option>
+    <option value="login">Login / Access Problem</option>
+    <option value="other">Other</option>
+  </select>
+
+  <label for="message">Description:</label>
+  <textarea id="message" name="message" placeholder="Describe the problem in detail..." required></textarea>
+
+  <button type="submit">Submit Ticket</button>
+</form>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Games for Learning | IT Design & Infrastructure</p>
+  </footer>
+</body>
+</html>

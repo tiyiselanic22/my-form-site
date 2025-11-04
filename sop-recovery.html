@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOP & Disaster Recovery | Games for Learning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+  }
+</script>
+
+<body>
+  <header>
+    
+      <a href="#" onclick="logout()">Logout</a>
+
+<script>
+  function logout() {
+    localStorage.removeItem("loggedIn");
+    window.location.href = "login.html";
+  }
+</script>
+    </nav>
+  </header>
+<header>
+  <nav>
+   
+    <a href="index.html">Home</a>
+    <a href="gaming.html">Gaming</a>
+
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">SOP <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <div class="row">
+            <div class="column">
+              <h3>Standard Operating Procedures</h3>
+              <a href="staff.html">IT Department Staff</a>
+              <a href="security.html">IT Security Policy</a>
+              <a href="acceptable.html">Acceptable Use Policy</a>
+              <a href="acquisition.html">Acquisition Procedures/Approvals</a>
+              <a href="helpdesk.html">Help Desk Procedures</a>
+              <a href="disaster.html">Disaster Recovery Plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h1>IT Department Standard Operating Procedures</h1>
+  <p>The Standard Operating Procedures (SOP) of the IT Department define how technology operations are carried out consistently, securely, and efficiently. These procedures are designed to guide staff, ensure compliance with organizational policies, and maintain a stable and safe computing environment. Each section below provides in-depth instructions and responsibilities for specific IT functions, helping employees understand their roles in maintaining reliable systems and data protection.</p>
+
+  <p>Through this SOP framework, the IT Department promotes accountability, transparency, and service excellence. Whether it involves managing daily technical support, enforcing network security, or recovering from system failures, each procedure plays a crucial role in maintaining business continuity and digital trust within the organization.</p>
+</main>
+
+<footer>
+  <p>&copy; 2025 IT Department. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

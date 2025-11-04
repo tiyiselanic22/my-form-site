@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IT Network Support Structure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+  }
+</script>
+
+<body>
+  <header><h1>IT Network Support Structure</h1></header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="security-policy.html">Security Policy</a>
+    <a href="acceptable-use.html">Acceptable Use</a>
+    <a href="helpdesk.html">Help Desk</a>
+    <a href="sop-recovery.html">SOP & Recovery</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="gaming.html">Gaming</a>
+    <a href="#" onclick="logout()">Logout</a>
+
+<script>
+  function logout() {
+    localStorage.removeItem("loggedIn");
+    window.location.href = "login.html";
+  }
+</script>
+  </nav>
+  <main class="structure-page">
+    <h2>Our IT Organizational Structure</h2>
+    <p>The diagram below represents the IT support structure of the Games For Learning intranet system, showing who reports to whom and how each role contributes to smooth operations.</p>
+
+    <div class="diagram-container">
+      <img src="it-structure.png" alt="IT Structure Diagram">
+    </div>
+
+    <section class="roles">
+      <h3>Roles and Responsibilities</h3>
+      <ul>
+        <li><strong>Team Leader (Cleo Khosa):</strong> Oversees all IT and administrative operations, ensuring clear communication and effective workflow between departments.</li>
+        <li><strong>Manager (Joel Monageng):</strong> Coordinates staff, manages IT projects, and ensures adherence to SOP and security protocols.</li>
+        <li><strong>Secretary (Dikeledi Thamaga):</strong> Handles official documentation, schedules, and assists with communication between team members and departments.</li>
+        <li><strong>IT Technician (Oratile Malatji):</strong> Provides technical support, network maintenance, and ensures system functionality for all users within the organization.</li>
+      </ul>
+    </section>
+  </main>
+
+    <main>
+  <h2>IT Department Structure</h2>
+  <p>
+    The IT department ensures that all learning systems, networks, and digital environments at 
+    <strong>Games for Learning</strong> operate efficiently and securely. The structure below defines clear 
+    reporting lines and responsibilities.
+  </p>
+
+  <h3>Reporting Lines</h3>
+  <p>The IT Manager reports directly to the Executive Management Team, ensuring alignment with company strategy and compliance with security standards.</p>
+
+  <h3>Support Areas</h3>
+  <ul>
+    <li>Hardware – computers, printers, servers.</li>
+    <li>Software – learning applications, system updates, antivirus.</li>
+    <li>Network – internet connectivity, Wi-Fi, data backup.</li>
+    <li>Security – data protection, access control, and recovery.</li>
+  </ul>
+</main>
+
+
+  <footer>
+    &copy; 2025 Games for Learning | Internal Use Only
+  </footer>
+</body>
+</html>

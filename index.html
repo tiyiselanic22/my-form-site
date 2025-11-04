@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Games for Learning - Intranet Site</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<script>
+  if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+  }
+</script>
+
+<body>
+  <header>
+    <h1>Games for Learning - Intranet Site</h1>
+    <p>Your central hub for IT and policy information</p>
+  </header>
+
+  <nav>
+    <a href="structure.html">IT Structure</a>
+    <a href="security-policy.html">Security Policy</a>
+    <a href="acceptable-use.html">Acceptable Use</a>
+    <a href="helpdesk.html">Help Desk</a>
+    <a href="sop-recovery.html">SOP & Recovery</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="gaming.html">Gaming</a>
+    <a href="#" onclick="logout()">Logout</a>
+
+<script>
+  function logout() {
+    localStorage.removeItem("loggedIn");
+    window.location.href = "login.html";
+  }
+</script>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome to Games For Learning</h2>
+      <p>Our platform provides educational games and IT resources designed to support both learning and operational excellence. Explore our SOPs, recovery plans, and interactive tools to stay informed and engaged.</p>
+    </section>
+
+    <section class="team">
+      <h2>Meet Our Team</h2>
+      <div class="team-container">
+
+        <div class="team-member">
+          <img src="team_leader.jpg" alt="Team Leader">
+          <h3>Cleo Khosa</h3>
+          <p><strong>Team Leader</strong></p>
+          <p>Leads project development and ensures team coordination for smooth operations.</p>
+        </div>
+        <div class="team-member">
+          <img src="secretary.jpg" alt="Secretary">
+          <h3>Dikeledi Thamaga</h3>
+          <p><strong>Secretary</strong></p>
+          <p>Handles communication, documentation, and scheduling for the entire team.</p>
+        </div>
+        <div class="team-member">
+          <img src="manager.jpg" alt="Manager">
+          <h3>Joel Monageng</h3>
+          <p><strong>Manager</strong></p>
+          <p>Oversees strategic planning and manages resource allocation across departments.</p>
+        </div>
+        <div class="team-member">
+          <img src="it_technician.jpg" alt="IT Technician">
+          <h3>Oratile Malatji</h3>
+          <p><strong>IT Technician</strong></p>
+          <p>Maintains the network systems and ensures technical issues are resolved promptly.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Games For Learning | IT Design & Infrastructure</p>
+  </footer>
+</body>
+</html>

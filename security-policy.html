@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IT Security Policy Guidelines</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>IT Security Policy Guidelines</h1></header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="structure.html">IT Structure</a>
+    <a href="acceptable-use.html">Acceptable Use</a>
+    <a href="helpdesk.html">Help Desk</a>
+    <a href="sop-recovery.html">SOP & Recovery</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="gaming.html">Gaming</a>
+    <a href="#" onclick="logout()">Logout</a>
+
+<script>
+  function logout() {
+    localStorage.removeItem("loggedIn");
+    window.location.href = "login.html";
+  }
+</script>
+  </nav>
+
+  <main>
+  <h2>IT Security Policy Guidelines</h2>
+  <p>
+    Security is central to Games for Learning’s operations. This policy outlines how staff should protect 
+    information assets, hardware, and software from unauthorized access, loss, or misuse.
+  </p>
+
+  <h3>General Security Principles</h3>
+  <ul>
+    <li>Access to systems must be granted based on job responsibilities (Principle of Least Privilege).</li>
+    <li>All devices must have up-to-date antivirus and endpoint protection installed.</li>
+    <li>Network firewalls must remain active and configured by authorized staff only.</li>
+  </ul>
+
+  <h3>Physical and IT Security</h3>
+  <ul>
+    <li>Server rooms are accessible to authorized personnel only.</li>
+    <li>Workstations should be locked when unattended.</li>
+    <li>All software installations require IT department approval.</li>
+  </ul>
+
+  <h3>Email and Data Security</h3>
+  <ul>
+    <li>Company email accounts must be used for official communication only.</li>
+    <li>Emails containing confidential information should be encrypted.</li>
+    <li>Do not open attachments or links from unknown sources.</li>
+  </ul>
+
+  <h3>Incident Reporting</h3>
+  <p>All suspicious activities or possible data breaches must be reported immediately to the IT Manager.</p>
+</main>
+
+
+  <footer>
+    &copy; 2025 Games for Learning | Internal Use Only
+  </footer>
+</body>
+</html>

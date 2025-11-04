@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Games | Games for Learning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+  }
+</script>
+
+<body>
+  <header>
+    <h1>Games for Learning</h1>
+    <p>Explore fun and interactive educational games!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="it-structure.html">IT Structure</a>
+    <a href="security-policy.html">Security Policy</a>
+    <a href="use-policy.html">Use Policy</a>
+    <a href="helpdesk.html">Help Desk</a>
+    <a href="sop-recovery.html">SOP & Recovery</a>
+    <a href="gaming.html">Gaming</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="#" onclick="logout()">Logout</a>
+
+<script>
+  function logout() {
+    localStorage.removeItem("loggedIn");
+    window.location.href = "login.html";
+  }
+</script>
+  </nav>
+
+  <main>
+    <h2>Educational Games</h2>
+    <p>
+      Learning is more fun when combined with play!  
+      Explore the following **educational games** that build problem-solving, memory, and creativity skills 
+      for learners of all ages.
+    </p>
+
+    <section>
+      <h3>🎯 Mathematics & Logic</h3>
+      <ul>
+        <li><a href="https://www.coolmathgames.com/" target="_blank">Cool Math Games</a> – Fun and challenging puzzles that make math exciting.</li>
+        <li><a href="https://phet.colorado.edu/" target="_blank">PhET Interactive Simulations</a> – Science and math games by the University of Colorado Boulder.</li>
+        <li><a href="https://www.prodigygame.com/" target="_blank">Prodigy</a> – Adventure-based math game that adapts to your learning level.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>📚 Language & Literacy</h3>
+      <ul>
+        <li><a href="https://www.funbrain.com/" target="_blank">Funbrain</a> – Games that teach reading, grammar, and vocabulary.</li>
+        <li><a href="https://www.starfall.com/" target="_blank">Starfall</a> – Great for early learners improving reading skills.</li>
+        <li><a href="https://www.education.com/games/reading/" target="_blank">Education.com Reading Games</a> – Word puzzles and comprehension activities.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>🔬 Science & Discovery</h3>
+      <ul>
+        <li><a href="https://kids.nationalgeographic.com/games" target="_blank">National Geographic Kids</a> – Explore nature, geography, and science games.</li>
+        <li><a href="https://www.sciencekids.co.nz/gamesactivities.html" target="_blank">Science Kids</a> – Hands-on experiments and interactive activities.</li>
+        <li><a href="https://pbskids.org/games/science/" target="_blank">PBS Kids Science Games</a> – Science challenges featuring popular cartoon characters.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>💡 Creativity & Design</h3>
+      <ul>
+        <li><a href="https://scratch.mit.edu/" target="_blank">Scratch</a> – Learn programming by creating animations and games.</li>
+        <li><a href="https://www.autodesk.com/education/edu-software/overview" target="_blank">Autodesk Education</a> – 3D design tools for creative learners.</li>
+        <li><a href="https://toytheater.com/category/art/" target="_blank">Toy Theater Art</a> – Fun and colorful online drawing tools.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>🧠 Memory & Problem Solving</h3>
+      <ul>
+        <li><a href="https://www.brainpop.com/games/" target="_blank">BrainPOP Games</a> – Brain challenges across all subjects.</li>
+        <li><a href="https://www.lumosity.com/" target="_blank">Lumosity</a> – Memory and focus training games.</li>
+        <li><a href="https://www.education.com/games/puzzles/" target="_blank">Education.com Puzzle Games</a> – Brain teasers and cognitive development activities.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Games for Learning | Designed by IT Design</p>
+  </footer>
+</body>
+</html>

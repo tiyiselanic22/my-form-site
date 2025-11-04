@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Acceptable Use Policy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+  }
+</script>
+
+<body>
+  <header><h1>Acceptable Use Policy</h1></header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="structure.html">IT Structure</a>
+    <a href="security-policy.html">Security Policy</a>
+    <a href="helpdesk.html">Help Desk</a>
+    <a href="sop-recovery.html">SOP & Recovery</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="gaming.html">Gaming</a>
+    <a href="#" onclick="logout()">Logout</a>
+
+<script>
+  function logout() {
+    localStorage.removeItem("loggedIn");
+    window.location.href = "login.html";
+  }
+</script>
+  </nav>
+
+  <main>
+  <h2>Acceptable Use Policy</h2>
+  <p>
+    This policy defines acceptable use of Games for Learning’s technology resources.  
+    All staff and students must adhere to these guidelines to ensure system security and integrity.
+  </p>
+
+  <h3>General Rules</h3>
+  <ul>
+    <li>Technology resources are for business and learning purposes only.</li>
+    <li>Personal data or applications should not be stored on company devices.</li>
+    <li>Respect copyright and intellectual property laws when using digital materials.</li>
+  </ul>
+
+  <h3>Network and Internet Use</h3>
+  <ul>
+    <li>Streaming or gaming unrelated to learning is prohibited.</li>
+    <li>Do not connect personal devices to the company network without IT approval.</li>
+    <li>Internet usage is monitored for compliance with this policy.</li>
+  </ul>
+
+  <h3>Violation Management</h3>
+  <ul>
+    <li>First-time violations will result in a written warning.</li>
+    <li>Repeated violations may lead to account suspension or disciplinary action.</li>
+  </ul>
+
+  <p>
+    Compliance with this policy ensures that all systems function optimally for educational development 
+    and learning innovation.
+  </p>
+</main>
+
+
+  <footer>
+    &copy; 2025 Games for Learning | Internal Use Only
+  </footer>
+</body>
+</html>
